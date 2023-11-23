@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    color: #ededed;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+   font-size: 25px;
+   color: #ededed;
+   text-decoration: none;
+   font-weight: 600;
+   
+}
+.navbar a{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: #00abf0;
+}
+
+
+.Home {
+    background: url('https://c4.wallpaperflare.com/wallpaper/930/759/714/smile-wall-mask-black-and-white-background-wallpaper-preview.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;    
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.Home-Content {
+    max-width: 600px;
+
+}
+.Home-Content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.Home-Content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+.Home-Content p {
+    margin: 20px 0 40px;
+    font-size: 16px;
+}
+.Home-Content .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #081b29;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s; 
+
+}
+
+.btn-box a:hover{
+    color: #00abf0;
+}
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #00abf0;
+}
+
+.btn-box a:nth-child(2):hover{
+    color: #081b29;
+}
+
+.btn-box a:nth-child(2)::before{
+    background: #00abf0;
+}
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s;
+
+
+}
+.btn-box a:hover::before {
+    width: 100%;
+
+}
+
+.home-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+
+}
+
+.home-sci a:hover {
+    color: #081b29;
+} 
+.home-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition: .5s;
+    background: #00abf0;
+    z-index: -1;
+    
+
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+
+.home-imgHower {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    background: transparent;
+    transition: 3s;
+}
+
+.home-imgHower:hover {
+    /* background: #00abf0; */
+    opacity: .8;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--second-bg-color);
+    padding-bottom: 6rem;
+    background-color: #081b29;
+
+}
+
+
+.heading {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+
+}
+
+.about-img {
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about-img img {
+    width: 90%;
+    border-radius: 100%;
+    border: .2rem solid var(--main-color);
+    
+}
+
+
+.about-me-sec{
+    min-height: 100vh;
+    background-color: var(--secondary-shade);
+    color: var(--primary-color);
+}
+
+.about-me-sec hr{
+    border: 2px solid red;
+    margin-bottom: 2rem;
+}
+
+.about-content img{
+    width: 100%;
+    transform: scaleX(-1);
+}
+
+.about-content ul{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.about-content span{
+    color: #C6DCE4;
+}
+
+.dot{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+.dot-w{
+    background-color: var(--primary-color);
+}
+
+.dot-b{
+    background-color: var(--seconday-color);
+}
+
+.dot-ws{
+    background-color: var(--primary-shade);
+}
+
+.dot-bs{
+    background-color: #C6DCE4;
+}
+
+.dot-a{
+    background-color: var(--accent-color);
+}
+
